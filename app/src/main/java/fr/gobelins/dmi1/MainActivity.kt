@@ -55,5 +55,20 @@ class MainActivity : AppCompatActivity() {
                 startActivity(chooser)
             }
         }
+
+        binding.btnHomeLaunchLocation.setOnClickListener{
+            val destination = "45.907841, 6.102777" //apeteries Gobelins
+            val uri = "google.navigation:q=$destination"
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri)).apply {
+                setPackage("com.google.android.apps.maps")
+            }
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+            } else {
+                val webUri = "http://maps.google.com/maps?daddr=$destination"
+                val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse(webUri))
+                startActivity(webIntent)
+            }
+        }
     }
 }

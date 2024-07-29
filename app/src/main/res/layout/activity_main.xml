@@ -30,5 +30,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_partagervia" />
+    <Button
+        android:id="@+id/btn_home_launch_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_locaction" />
 
 </LinearLayout>
