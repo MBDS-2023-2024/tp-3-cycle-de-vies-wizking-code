@@ -4,4 +4,5 @@
     <string name="first_operand">first_operand</string>
     <string name="second_operand">second_operand</string>
     <string name="btn_compute">btn_compute</string>
+    <string name="btn_call">S.O.S</string>
 </resources>
