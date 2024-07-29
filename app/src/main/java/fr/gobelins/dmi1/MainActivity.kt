@@ -34,5 +34,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity(phoneIntent)
             }
         }
+
+        binding.btnHomeSearch.setOnClickListener{
+                // URL à ouvrir
+                val url = "https://google.com"
+                val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                startActivity(browserIntent)
+        }
     }
 }
