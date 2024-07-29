@@ -25,4 +25,10 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_search" />
 
+    <Button
+        android:id="@+id/btn_home_partagervia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_partagervia" />
+
 </LinearLayout>

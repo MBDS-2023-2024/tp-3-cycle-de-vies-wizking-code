@@ -41,5 +41,19 @@ class MainActivity : AppCompatActivity() {
                 val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 startActivity(browserIntent)
         }
+
+
+        binding.btnHomePartagervia.setOnClickListener{
+            val ContentMessage = "just share with you via code"
+            val shareIntent = Intent().apply {
+                action = Intent.ACTION_SEND
+                type = "text/plain"
+                putExtra(Intent.EXTRA_TEXT, ContentMessage)
+            }
+            val chooser = Intent.createChooser(shareIntent, "Share message via")
+            if (shareIntent.resolveActivity(packageManager) != null) {
+                startActivity(chooser)
+            }
+        }
     }
 }

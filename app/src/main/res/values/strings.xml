@@ -6,4 +6,5 @@
     <string name="second_operand">second_operand</string>
     <string name="btn_call">S.O.S.</string>
     <string name="btn_search">Research</string>
+    <string name="btn_partagervia">Share via</string>
 </resources>
